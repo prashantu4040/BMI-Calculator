@@ -11,6 +11,7 @@ function bmi() {
     // BMI Calculation
     let bmi = weight / Math.pow(height, 2);
     // BMI showing in p tag with condition
+    console.log(bmi);
     if(bmi<18.5){
         document.querySelector("p").innerHTML = "Your Body Mass Index(BMI) is:- "+(Math.round(bmi*100)/100).toFixed(2)+"<br>"+"Index Value is Under Weight";
     }
